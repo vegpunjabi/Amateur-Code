@@ -1,0 +1,16 @@
+def cgpa_to_gpa(cgpa):
+    gpa = float(cgpa)/2.5
+    return gpa
+
+cgpa = float(input("Type Your CGPA Here - "))
+
+if cgpa > 10:
+    print("Won't Work Buddy")
+elif cgpa < 0:
+    print("Sorry, but You'll have to Live with your Parents for the Rest of your Life")
+elif 8 < cgpa < 10:
+    print("Conragulations on Getting a GPA of", round(cgpa_to_gpa(cgpa), 1))
+elif 0 < cgpa < 5:
+    print("Sorry, But Your GPA is -", round(cgpa_to_gpa(cgpa), 1))
+else:
+    print("Your GPA is -", round(cgpa_to_gpa(cgpa), 1))
